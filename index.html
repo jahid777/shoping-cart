@@ -65,8 +65,8 @@
 
                      <div class="col-md-4 status">
                         <h5>$ <span id="subtotal">1278</span> </h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$ <span id="tax">15</span> </h5>
+                        <h5>$ <span id="allSubtotalAmount">1,293</span> </h5>
                      </div>
                   </div>
                </div>
@@ -81,10 +81,9 @@
 
 
    <script>
-      // this is the first mobile section part and it is start from here
+      // this is the first mobile section part and it is start from here=========================
 
       //here start the plus button of first section
-
       var plusBtn =document.getElementById("plusBtn");
       plusBtn.addEventListener("click",function(){
         var valueItem = document.getElementById("valueItem").value;
@@ -93,23 +92,40 @@
          document.getElementById("valueItem").value = totalMobile;
 
 
-
+      //here start per mobile price area for first section
          var mobileAmount = document.getElementById("mobileAmount").innerText;
          var mobileAmountNumber = parseFloat(mobileAmount);
-         var totalMobile = mobileAmountNumber + 1219;
-         document.getElementById("mobileAmount").innerText = totalMobile;
+         var mobilePrice = mobileAmountNumber + 1219;
+         document.getElementById("mobileAmount").innerText = mobilePrice;
 
 
-
-
+      //here start the subtotal area for first section  
          var subtotal = document.getElementById("subtotal").innerText;
          var subtotalAmountNumber = parseFloat(subtotal);
-         var totalMobile = subtotalAmountNumber + 1219;
-         document.getElementById("subtotal").innerText = totalMobile;
+         var sumOfSubtotal = subtotalAmountNumber + 1219;
+         document.getElementById("subtotal").innerText = sumOfSubtotal;
+
+
+      //here start tax area for first section
+         var tax = document.getElementById("tax").innerText;
+         var taxAmountNumber = parseFloat(tax);
+         var totalTax = taxAmountNumber + 10;
+         document.getElementById("tax").innerText = totalTax;
+
+
+      //here start total price area for first section
+         var allSubtotalAmount = document.getElementById("allSubtotalAmount").innerText;
+         var allSubtotalNumber = parseFloat(allSubtotalAmount);
+         var totalPrice = sumOfSubtotal + totalTax;
+         document.getElementById("allSubtotalAmount").innerText = totalPrice;
          }) 
 
-          //here start the minus button of first section
 
+
+          //here start the minus button of first section=========================================
+
+
+         //here start the minus button area of minus button for first section
           var minusBtn = document.getElementById("minusBtn");
           minusBtn.addEventListener("click",function(){
           var valueItem = document.getElementById("valueItem").value;
@@ -118,90 +134,121 @@
           document.getElementById("valueItem").value = totalMobile;
 
 
-          var mobileAmount = document.getElementById("mobileAmount").innerText;
+         //here start the per mobile amount area for first section   
+         var mobileAmount = document.getElementById("mobileAmount").innerText;
          var mobileAmountNumber = parseFloat(mobileAmount);
-         var totalMobile = mobileAmountNumber - 1219;
-         document.getElementById("mobileAmount").innerText = totalMobile;   
+         var mobilePrice = mobileAmountNumber - 1219;
+         document.getElementById("mobileAmount").innerText = mobilePrice;   
 
 
-
+        //here start the subtotal area for first section
          var subtotal = document.getElementById("subtotal").innerText;
          var subtotalAmountNumber = parseFloat(subtotal);
-         var totalMobile = subtotalAmountNumber - 1219;
-         document.getElementById("subtotal").innerText = totalMobile;
-         })
+         var sumOfSubtotal= subtotalAmountNumber - 1219;
+         document.getElementById("subtotal").innerText = sumOfSubtotal;
+
+
+        //here start the text area for first section
+         var tax = document.getElementById("tax").innerText;
+         var taxAmountNumber = parseFloat(tax);
+         var totalTax = taxAmountNumber - 10;
+         document.getElementById("tax").innerText = totalTax;    
+
+
+        //here start the total price area for first section
+         var allSubtotalAmount = document.getElementById("allSubtotalAmount").innerText;
+         var allSubtotalNumber = parseFloat(allSubtotalAmount);
+         var totalPrice = sumOfSubtotal + totalTax;
+         document.getElementById("allSubtotalAmount").innerText = totalPrice;
+      })
    
+
+
          
-         //this is the second case part and it is start from here
+         //this is the second case part and it is start from here================================
+
 
          //this is the plus button for second section
-
             var casePlusBtn = document.getElementById("casePlusBtn");
             casePlusBtn.addEventListener("click",function(){
             var caseValue = document.getElementById("caseValue").value;
             var caseValueNumber = parseFloat(caseValue);
-            var totalMobile =  caseValueNumber+1;
-            document.getElementById("caseValue").value = totalMobile;
+            var totalCase =  caseValueNumber+1;
+            document.getElementById("caseValue").value = totalCase;
 
 
 
-
+         //here start the per case price for the second section
             var caseAmount = document.getElementById("caseAmount").innerText;
             var caseAmountNumber = parseFloat(caseAmount);
-            var totalMobile = caseAmountNumber + 59;
-         document.getElementById("caseAmount").innerText = totalMobile;
-
-
+            var totalCaseAmount = caseAmountNumber + 59;
+            document.getElementById("caseAmount").innerText = totalCaseAmount;
 
 
          
+         //here start the subtotal area for second section
          var subtotal = document.getElementById("subtotal").innerText;
          var subtotalAmountNumber = parseFloat(subtotal);
-         var totalMobile = subtotalAmountNumber + 59;
-         document.getElementById("subtotal").innerText = totalMobile;
+         var sumOfSubtotal = subtotalAmountNumber + 59;
+         document.getElementById("subtotal").innerText = sumOfSubtotal;
 
 
-         })
+         //here start the tax section for the second section
+         var tax = document.getElementById("tax").innerText;
+         var taxAmountNumber = parseFloat(tax);
+         var totalTax = taxAmountNumber + 5;
+         document.getElementById("tax").innerText = totalTax;
 
-      //this is the minus button of second section
 
+        //here start the total section for the second section
+         var allSubtotalAmount = document.getElementById("allSubtotalAmount").innerText;
+         var allSubtotalNumber = parseFloat(allSubtotalAmount);
+         var totalPrice = sumOfSubtotal + totalTax;
+         document.getElementById("allSubtotalAmount").innerText = totalPrice;
+      })
+
+      //this is the minus button of second section===============================================
+
+
+         //here start the minus button for the second section
             var caseMinusBtn = document.getElementById("caseMinusBtn");
             caseMinusBtn.addEventListener("click",function(){
             var caseValue = document.getElementById("caseValue").value;
             var caseValueNumber = parseFloat(caseValue);
-            var totalMobile = caseValueNumber-1;
-            document.getElementById("caseValue").value = totalMobile;
+            var totalCase = caseValueNumber-1;
+            document.getElementById("caseValue").value = totalCase;
 
 
-
-
-            
+         //here start the price per case area for second section    
             var caseAmount = document.getElementById("caseAmount").innerText;
             var caseAmountNumber = parseFloat(caseAmount);
-            var totalMobile = caseAmountNumber - 59;
-            document.getElementById("caseAmount").innerText = totalMobile;
+            var totalCaseAmount = caseAmountNumber - 59;
+            document.getElementById("caseAmount").innerText = totalCaseAmount;
+
+
+         //here start the subtotal area for the second section
+           var subtotal = document.getElementById("subtotal").innerText;
+           var subtotalAmountNumber = parseFloat(subtotal);
+           var sumOfSubtotal = subtotalAmountNumber - 59;
+           document.getElementById("subtotal").innerText = sumOfSubtotal;
 
 
 
+         //here start the tax area for the second section
+          var tax = document.getElementById("tax").innerText;
+          var taxAmountNumber = parseFloat(tax);
+          var totalTax = taxAmountNumber - 5;
+          document.getElementById("tax").innerText = totalTax;
 
-         var subtotal = document.getElementById("subtotal").innerText;
-         var subtotalAmountNumber = parseFloat(subtotal);
-         var totalMobile = subtotalAmountNumber - 59;
-         document.getElementById("subtotal").innerText = totalMobile;
 
+         //here start the total area for the second section
+          var allSubtotalAmount = document.getElementById("allSubtotalAmount").innerText;
+          var allSubtotalNumber = parseFloat(allSubtotalAmount);
+          var totalPrice = sumOfSubtotal + totalTax;
+          document.getElementById("allSubtotalAmount").innerText = totalPrice;
          })
    </script>
 
 
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>
