@@ -81,6 +81,10 @@
 
 
    <script>
+      // this is the first mobile section part and it is start from here
+
+      //here start the plus button of first section
+
       var plusBtn =document.getElementById("plusBtn");
       plusBtn.addEventListener("click",function(){
         var valueItem = document.getElementById("valueItem").value;
@@ -91,22 +95,22 @@
 
 
          var mobileAmount = document.getElementById("mobileAmount").innerText;
-         mobileAmountNumber = parseFloat(mobileAmount);
-         totalMobile = mobileAmountNumber + 1219;
+         var mobileAmountNumber = parseFloat(mobileAmount);
+         var totalMobile = mobileAmountNumber + 1219;
          document.getElementById("mobileAmount").innerText = totalMobile;
 
 
 
 
          var subtotal = document.getElementById("subtotal").innerText;
-         subtotalAmountNumber = parseFloat(subtotal);
-         totalMobile = subtotalAmountNumber + 1219;
+         var subtotalAmountNumber = parseFloat(subtotal);
+         var totalMobile = subtotalAmountNumber + 1219;
          document.getElementById("subtotal").innerText = totalMobile;
          }) 
 
-          //here start the minus button
+          //here start the minus button of first section
 
-         var minusBtn = document.getElementById("minusBtn");
+          var minusBtn = document.getElementById("minusBtn");
           minusBtn.addEventListener("click",function(){
           var valueItem = document.getElementById("valueItem").value;
           var valueNumber = parseFloat(valueItem);
@@ -115,24 +119,25 @@
 
 
           var mobileAmount = document.getElementById("mobileAmount").innerText;
-         mobileAmountNumber = parseFloat(mobileAmount);
-         totalMobile = mobileAmountNumber - 1219;
+         var mobileAmountNumber = parseFloat(mobileAmount);
+         var totalMobile = mobileAmountNumber - 1219;
          document.getElementById("mobileAmount").innerText = totalMobile;   
 
 
 
          var subtotal = document.getElementById("subtotal").innerText;
-         subtotalAmountNumber = parseFloat(subtotal);
-         totalMobile = subtotalAmountNumber - 1219;
+         var subtotalAmountNumber = parseFloat(subtotal);
+         var totalMobile = subtotalAmountNumber - 1219;
          document.getElementById("subtotal").innerText = totalMobile;
          })
    
          
          //this is the second case part and it is start from here
-         //this is the plus button for case 
 
-         var casePlusBtn = document.getElementById("casePlusBtn");
-         casePlusBtn.addEventListener("click",function(){
+         //this is the plus button for second section
+
+            var casePlusBtn = document.getElementById("casePlusBtn");
+            casePlusBtn.addEventListener("click",function(){
             var caseValue = document.getElementById("caseValue").value;
             var caseValueNumber = parseFloat(caseValue);
             var totalMobile =  caseValueNumber+1;
@@ -142,8 +147,8 @@
 
 
             var caseAmount = document.getElementById("caseAmount").innerText;
-         caseAmountNumber = parseFloat(caseAmount);
-         totalMobile = caseAmountNumber + 59;
+            var caseAmountNumber = parseFloat(caseAmount);
+            var totalMobile = caseAmountNumber + 59;
          document.getElementById("caseAmount").innerText = totalMobile;
 
 
@@ -151,17 +156,17 @@
 
          
          var subtotal = document.getElementById("subtotal").innerText;
-         subtotalAmountNumber = parseFloat(subtotal);
-         totalMobile = subtotalAmountNumber + 59;
+         var subtotalAmountNumber = parseFloat(subtotal);
+         var totalMobile = subtotalAmountNumber + 59;
          document.getElementById("subtotal").innerText = totalMobile;
 
 
          })
 
-      //minus button start from here for the case of mobile
+      //this is the minus button of second section
 
-      var caseMinusBtn = document.getElementById("caseMinusBtn");
-         caseMinusBtn.addEventListener("click",function(){
+            var caseMinusBtn = document.getElementById("caseMinusBtn");
+            caseMinusBtn.addEventListener("click",function(){
             var caseValue = document.getElementById("caseValue").value;
             var caseValueNumber = parseFloat(caseValue);
             var totalMobile = caseValueNumber-1;
@@ -172,27 +177,19 @@
 
             
             var caseAmount = document.getElementById("caseAmount").innerText;
-         caseAmountNumber = parseFloat(caseAmount);
-         totalMobile = caseAmountNumber - 59;
-         document.getElementById("caseAmount").innerText = totalMobile;
+            var caseAmountNumber = parseFloat(caseAmount);
+            var totalMobile = caseAmountNumber - 59;
+            document.getElementById("caseAmount").innerText = totalMobile;
 
 
 
 
          var subtotal = document.getElementById("subtotal").innerText;
-         subtotalAmountNumber = parseFloat(subtotal);
-         totalMobile = subtotalAmountNumber - 59;
+         var subtotalAmountNumber = parseFloat(subtotal);
+         var totalMobile = subtotalAmountNumber - 59;
          document.getElementById("subtotal").innerText = totalMobile;
 
          })
-
-
-
-
-
-
-
-         
    </script>
 
 
